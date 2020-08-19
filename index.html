@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+ <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="bootstyle.css">
+ <title>word counting</title>
+    <style>
+      .bg{ background-image: url("Ux.jpg");}
+      h1,p{
+        font-family: sans-serif; 
+        color:white
+      }
+    </style>
+  </head>
+  <body>
+     <!-- Start Nagigation --><div>
+  <nav class="navbar navbar-expand-sm navbar-dark bg-primary pl-5 fixed-top shadow-lg" style="height:75px;">
+    <a href="index.html" class="navbar-brand">COWORD</a>
+    <span class="navbar-text">counting for you</span>
+    
+    <div class="collapse navbar-collapse  " id="myMenu">
+      <ul class="navbar-nav pl-5 custom-nav ">
+        <li class="nav-item"><a href="index.html" class="nav-link">Work</a></li>
+        <li class="nav-item"><a href="#Services" class="nav-link">Services</a></li>
+        <li class="nav-item"><a href="#Contact" class="nav-link">Contact</a></li>
+      </ul>
+    </div></div>
+  </nav>
+   <!-- End Navigation -->
+   <!--header-->
+      <div class="container-fluid  .container-sm text-center  bg " >
+        <div > 
+          <div>
+            <h1 style="margin-top:75px; "><b>COUNTING WORDS IS EASY</b></h1>
+            <p>Free online character and word count tool powered by high technology</p>
+          <h1>write your content here</h1> 
+          <textarea  id="input" row="1000" cols="50" style="height: 250px;"></textarea>
+          <p id="output" >WORDS:</p>
+          <p id="output2" >CHARACTERS:</p>
+          <button class="btn btn-primary mb-4">GET COUNT</button>
+        </div>
+      </div>
+       </div>
+       <!--about us-->
+       <div class="jumbotron mb-0">
+        <h2 class="text-primary ml-5">Why would you need an online word counter?</h2>
+            <div class="row">
+            <div class="col-sm-6 pl-5">
+              <p class="text-dark" >Online word counters are a perfect tool for anyone who needs to keep a count
+         of their words and characters, but doesn’t use Microsoft Word. Imagine writing
+          a piece and having to manually count the words! Not only will it take forever,
+           but there’s a chance you won’t be wholly accurate.<br><br>
+        This tool is also a good way to assess your words per minute typing rate.
+         Simply time yourself timing for five minutes. Type into the box on the online word
+          counter. When the time is up, divide your total word count by five, and you have your average
+           words per minute rate.</p></div>
+        <div class="col-sm-6 hide-in-mob"><h4 class="text-primary">Whom is this word counting tool for?</h4>
+           <ul>
+             <li>Bloggers/Content Writers</li>
+             <p class="text-dark">You could be writing an article for someone else where the word count is important,
+                but even if it’s for your own site, this tool can be fantastic for your SEO. For example,
+                 the body of text should be a minimum of 300 words, and the title should be less than 70 characters to rank effectively</p>
+                 <li>Teachers/Students</li>
+                 <p  class="text-dark">As a student, you will often be expected to write assignments with specific word counts.
+                    Although a bit of leeway is usually given, if you are well off the count either way,
+                     you could lose marks. What a waste of you time and effort! As a lecturer, you can use
+                      this tool to ensure your students’ assignments are the correct length.</p>
+                   <li>Other Uses</li>
+                   <P  class="text-dark">In many work places, you will be expected to write pieces of certain lengths at times,
+                      for example, lawyers, secretaries etc.</P>   
+           </ul>
+    </div>
+    </div>
+    </div>
+    <!--about-->
+    <!-- Start Footer-->
+  <!-- Footer -->
+<footer class="  container-fluid bg-primary mt-0 pt-0" style="height: 100px;">    
+  <!-- Copyright -->
+  <div class="footer-copyright text-center py-3">© 2020 Copyright:COWORD
+  </div>
+  <!-- Copyright -->
+</footer>
+<!-- Footer -->
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <script>
+$(document).ready(function(){
+$(".btn").click(function(){
+   let co=$("#input").val();
+   let char=co.length;
+   let count=co.split(" ");
+   $("#output").append(count.length);
+   $("#output2").append(char);
+} );
+});
+      </script>
+  </body>
+</html>
