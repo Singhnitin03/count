@@ -98,8 +98,8 @@ $(".btn").click(function(){
    let co=$("#input").val();
    let char=co.length;
    let count=co.split(" ");
-   $("#output").append(count.length);
-   $("#output2").append(char);
+    $("#output").text("WORDS: " + count.length);
+    $("#output2").text("CHARACTERS: " + char);
 } );
 });
       </script>
